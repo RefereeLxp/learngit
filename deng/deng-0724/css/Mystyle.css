@@ -1,0 +1,232 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+.m-canvas,
+.m-selectregion {
+  width: 100%;
+}
+.m-header {
+  height: 7%;
+  padding: 2% 0;
+  min-height: 47px;
+  width: 96%;
+  margin: 2% auto 0;
+  border-radius: 5px;
+  background: #ffffff url('../images/notice-bg.png') no-repeat 108% 50%;
+  box-shadow: 0px 1px 6px #c7c7c7;
+}
+.m-header .m-notice {
+  height: 100%;
+  color: #fff;
+}
+.m-header .m-notice .m-notice-lf {
+  flex: 1;
+  text-align: center;
+}
+.m-header .m-notice .m-notice-lf span {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.m-header .m-notice .m-notice-rg {
+  flex: 3;
+  text-align: left;
+  height: 100%;
+  color: #9b58b7;
+}
+.m-header .m-notice .m-notice-rg p {
+  padding-left: 5%;
+  font-size: .9em;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.m-header .m-notice .m-notice-rg b {
+  padding-left: 5%;
+  font-size: .8em;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.yuan {
+  width: 45px;
+  height: 45px;
+  border-radius: 40px;
+  display: inline-block;
+  background: #b07cc6;
+  border: 1px solid #d0b1dd;
+  box-shadow: 0px 0px 5px #dbc3e5;
+}
+.m-canvas {
+  height: 30%;
+  width: 100%;
+  margin: 4% auto 0;
+  box-shadow: 0px 1px 6px #c5a0d5;
+}
+.m-canvas .m-canvas-title {
+  height: 4%;
+  padding: 5px 2%;
+  background: #ffffff url('../images/map-bg.png') no-repeat -6% 70%;
+  display: table;
+  width: 100%;
+  color: #9b58b7;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid #c5a0d5;
+}
+.m-canvas .m-canvas-title b {
+  font-weight: normal;
+  font-size: .8rem;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1.4rem;
+  border-left: 3px solid #b07cc6;
+  padding-left: 10px;
+}
+.m-canvas .m-canvas-box {
+  height: 80%;
+  overflow: auto;
+  border-radius: 0 0 10px 10px;
+}
+.m-canvas .m-canvas-box img {
+  width: 100%;
+}
+.m-selectregion {
+  width: 100%;
+  margin: 0 auto;
+  height: 46%;
+  background: url("../images/box-bg.png") no-repeat 92% 45%;
+  box-shadow: 0px 1px 6px #c5a0d5;
+}
+.m-selectregion .m-selectregion-tit {
+  height: 4%;
+  padding: 5px 2%;
+  background: #ffffff url('../images/point-bg.png') no-repeat 3% 90%;
+  display: table;
+  width: 100%;
+  color: #9b58b7;
+  border-bottom: 2px solid #c5a0d5;
+}
+.m-selectregion .m-selectregion-tit b {
+  font-weight: normal;
+  font-size: .8rem;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1.4rem;
+  border-left: 3px solid #b07cc6;
+  padding-left: 10px;
+}
+.m-selectregion .m-selectregion-main {
+  height: 84%;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf {
+  flex: 2;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-top,
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-bottom {
+  height: 10%;
+  text-align: center;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-top span,
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-bottom span {
+  font-size: 1.4rem;
+  color: #7b98b1;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-top span {
+  vertical-align: top;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-bottom span {
+  vertical-align: bottom;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .weui-cells:after,
+.m-selectregion .m-selectregion-main .m-selectregion-lf .weui-cells:before {
+  height: 0;
+  left: auto;
+  right: auto;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main {
+  overflow: inherit;
+  height: 80%;
+  margin: 0 0 0 3%;
+  box-shadow: 0px 1px 6px #bbcad7;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .area-box {
+  position: relative;
+  box-shadow: 0px 1px 6px #bbcad7;
+  transition-duration: .5s;
+  height: 25%;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #d9d6ba;
+  border-bottom: 0;
+  background: transparent;
+  color: #7b98b1;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .area-box .jue {
+  position: absolute;
+  right: -10px;
+  top: 30%;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .weui-cell__ft {
+  font-size: 1.4rem;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .weui-cell__bd p {
+  font-size: .7rem;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .light {
+  color: #f1c435;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .dark {
+  color: #827d7d;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .area-box:hover {
+  box-shadow: 0px 2px 2px 2px #bababa);
+  -webkit-transform: translate(0, -3px);
+  -ms-transform: translate(0, -3px);
+  transform: translate(0, -3px);
+  z-index: 100;
+  background: #fbeec4;
+  height: 26%;
+  border-radius: 8px;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .area-box:first-child {
+  border-radius: 8px 8px 0 0;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .area-box:last-child {
+  border-bottom: 1px solid #d9d6ba;
+  border-radius: 0 0 8px 8px;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .weui-cell__bd {
+  flex: 3;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-lf .m-selectregion-box-main .weui-cell__ft {
+  flex: 1;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-rg {
+  flex: 1;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.m-selectregion .m-selectregion-main .m-selectregion-rg label {
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  bottom: 0;
+  right: 0;
+  vertical-align: middle;
+}
+.m-menu .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
+  color: #999;
+}
+.weui-switch-cp__input:checked ~ .weui-switch-cp__box,
+.weui-switch:checked {
+  border-color: #efba14;
+  background-color: #efba14;
+}
